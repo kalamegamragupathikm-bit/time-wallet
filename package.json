@@ -1,0 +1,98 @@
+{
+  "name": "timewallet",
+  "version": "2.0.0",
+  "description": "A comprehensive time and expense tracking wallet application for freelancers and remote workers",
+  "author": {
+    "name": "Timewallet Team",
+    "url": "https://github.com/kalamegamragupathikm-bit/time-wallet"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/kalamegamragupathikm-bit/time-wallet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kalamegamragupathikm-bit/time-wallet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kalamegamragupathikm-bit/time-wallet/issues"
+  },
+  "keywords": [
+    "time-tracking",
+    "expense-tracking",
+    "wallet",
+    "freelancer",
+    "productivity",
+    "remote-work",
+    "invoicing",
+    "currency-converter",
+    "money-transfer",
+    "pwa"
+  ],
+  "type": "module",
+  "main": "dist/app.js",
+  "files": [
+    "dist",
+    "src",
+    "public",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.html",
+    "lint:fix": "eslint src --ext .js,.html --fix",
+    "format": "prettier --write 'src/**/*.{js,html,css,json}'",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "type-check": "tsc --noEmit",
+    "analyze": "vite-plugin-visualizer",
+    "serve": "http-server dist -p 8080 -c-1",
+    "validate": "npm run lint && npm run type-check && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "vite": "^5.0.8",
+    "vite-plugin-visualizer": "^0.10.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.1.1",
+    "vitest": "^1.0.4",
+    "@vitest/ui": "^1.0.4",
+    "@vitest/coverage-v8": "^1.0.4",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.6",
+    "postcss": "^8.4.32",
+    "postcss-preset-env": "^9.3.0",
+    "cssnano": "^6.0.2",
+    "autoprefixer": "^10.4.16",
+    "http-server": "^14.1.1",
+    "dotenv": "^16.3.1",
+    "dotenv-cli": "^7.3.0"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5",
+    "firebase": "^10.7.1",
+    "dompurify": "^3.0.6",
+    "chart.js": "^4.4.1",
+    "date-fns": "^2.30.0",
+    "axios": "^1.6.5",
+    "idb": "^7.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not IE 11"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
